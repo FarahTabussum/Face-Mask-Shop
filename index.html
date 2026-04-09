@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lora", serif;
+      }
+    </style>
+
+    <title>Face Mask Shop</title>
+  </head>
+  <body>
+    <section class="px-4 md:px-10 py-10">
+      <div class="flex flex-col lg:flex-row gap-10 items-stretch">
+        <!-- LEFT: IMAGE -->
+        <div class="flex-1 flex flex-col h-full">
+          <div class="relative w-full max-w-lg flex-1">
+            <!-- Main Image -->
+            <img
+              id="mainImage"
+              src="Images/main.png"
+              class="w-full mt-5 rounded-lg"
+            />
+            <!-- LEFT ARROW -->
+            <button
+              id="leftArrow"
+              class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-blue-500 transition"
+            >
+              <img src="Images/left_arrow.png" class="w-4 h-4" />
+            </button>
+
+            <!-- RIGHT ARROW -->
+            <button
+              id="rightArrow"
+              class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-blue-500 transition"
+            >
+              <img src="Images/right_arrow.png" class="w-4 h-4" />
+            </button>
+          </div>
+
+          <!-- check marks -->
+          <div class="flex gap-5 mt-12">
+            <img
+              src="Images/LED Mask LumenLuxe _ Red & Blue Light _ Anti-aging & Acne.png"
+              class="thumb w-20 h-20 object-cover rounded cursor-pointer border"
+            />
+            <img
+              src="Images/LED Mask LumenLuxe _ Red & Blue Light _ Anti-aging & Acne (1).png"
+              class="thumb w-20 h-20 object-cover rounded cursor-pointer border"
+            />
+            <img
+              src="Images/LED Mask LumenLuxe _ Red & Blue Light _ Anti-aging & Acne (2).png"
+              class="thumb w-20 h-20 object-cover rounded cursor-pointer border"
+            />
+            <img
+              src="Images/LED Mask LumenLuxe _ Red & Blue Light _ Anti-aging & Acne (3).png"
+              class="thumb w-20 h-20 object-cover rounded cursor-pointer border"
+            />
+            <img
+              src="Images/LED Mask LumenLuxe _ Red & Blue Light _ Anti-aging & Acne (4).png"
+              class="thumb w-20 h-20 object-cover rounded cursor-pointer border"
+            />
+          </div>
+        </div>
+
+        <!-- PRODUCT DETAILS -->
+        <div class="flex-1 max-w-xl">
+          <h1 class="text-2xl md:text-3xl font-bold">
+            LED Maska LumenLuxe Cervene & Modre Svetlo. Anti-aging & Akne
+          </h1>
+          <div class="flex items-center gap-3 mt-4">
+            <img src="Images/Group 1171275317.png" class="w-8 h-8" />
+            <p class="text-sm leading-tight">
+              <span class="font-bold">Dermatológmi</span> <br />
+              <span class="text-gray-500 font-sm">odporúčaná LED maska.</span>
+            </p>
+          </div>
+
+          <!-- Check list -->
+          <div class="mt-6 space-y-3">
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>Klinicky overené účinky</p>
+            </div>
+
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>Pomáha redukovať vrásky a podporuje omladenie pleti.</p>
+            </div>
+
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>
+                Znižuje aktívne akné, výskyt vyrážok, začervenanie a zápaly.
+              </p>
+            </div>
+
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>Urýchľuje hojenie a čistenie pleti od nedokonalostí.</p>
+            </div>
+
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>Zmierňuje a pomáha zjemniť vzhľad jaziev po akné.</p>
+            </div>
+
+            <div class="check-item flex items-start gap-2 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 border-2 border-gray-400 rounded flex items-center justify-center text-xs"
+              ></span>
+              <p>
+                Bez chemických látok, bolesti, vedľajších účinkov či nutnosti
+                rekonvalescencie.
+              </p>
+            </div>
+          </div>
+
+          <!-- Price -->
+          <div class="mt-6 flex items-center gap-4">
+            <p class="font-bold text-xl">€199,97 EUR</p>
+            <p class="text-red-500 line-through">€289,97 EUR</p>
+          </div>
+
+
+          <!-- Quantity -->
+          <div class="mt-6 flex items-center gap-4 flex-wrap">
+            <div class="flex items-center border rounded-lg overflow-hidden">
+              <button id="decrease" class="px-4 py-2 bg-gray-100">-</button>
+              <span id="quantity" class="px-4">1</span>
+              <button id="increase" class="px-4 py-2 bg-gray-100">+</button>
+            </div>
+
+            <button class="btn btn-primary bg-blue-900">Pridať do košíka</button>
+          </div>
+
+          <button
+            class="btn w-full mt-4 bg-black text-white flex items-center justify-center gap-2"
+          >
+            Kúpiť cez
+            <img src="Images/gooogle.jpg" class="h-5" />
+            Pay
+          </button>
+          <p class="text-center mt-2 text-xs text-gray-500">
+            Ďalšie možnosti platby
+          </p>
+          <div class="mt-2 flex justify-between items-center max-w-xl mx-auto">
+            <div class="flex flex-col items-center">
+              <img src="Images/fi_5733771.png" class="h-6 w-auto" />
+              <p class="text-xs text-center mt-2">
+                Hodnotenie 4,8 <br />(1500 + nákupov)
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img src="Images/fi_2652224.png" class="h-6 w-auto" />
+              <p class="text-xs text-center mt-2">
+                Hodnotenie 4,8 <br />(1500 + nákupov)
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="Images/fi_17865314.png" class="h-6 w-auto" />
+              <p class="text-xs text-center mt-2">
+                Hodnotenie 4,8 <br />(1500 + nákupov)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BENEFITY -->
+    <section class="px-4 md:px-10 py-10">
+      <div class="rounded-lg p-6">
+        <h2 class="text-lg md:text-2xl font-bold mb-6">BENEFITY</h2>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- LEFT -->
+          <div class="flex flex-wrap gap-3 flex-1">
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Všetky typy pleti/pokožky
+            </span>
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Zlepšenie vzhľadu pleti
+            </span>
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Hojenie jaziev
+            </span>
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Účinok proti akné
+            </span>
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Stimulácia tvorby kolagénu
+            </span>
+            <span
+              class="bg-blue-900 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
+            >
+              Omladzujúce účinky
+            </span>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="flex-1 space-y-3">
+            <div class="check-item flex items-center gap-3 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 flex items-center justify-center rounded-lg border-2 border-gray-500 text-xs"
+              ></span>
+              <p>Viditeľne redukuje vrásky</p>
+            </div>
+
+            <div class="check-item flex items-center gap-3 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 flex items-center justify-center rounded-lg border-2 border-gray-500 text-xs"
+              ></span>
+              <p>Prenikajúce hlboko do pokožky</p>
+            </div>
+
+            <div class="check-item flex items-center gap-3 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 flex items-center justify-center rounded-lg border-2 border-gray-500 text-xs"
+              ></span>
+              <p>Bezbolestné ošetrenia iba 10 minút denne</p>
+            </div>
+
+            <div class="check-item flex items-center gap-3 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 flex items-center justify-center rounded-lg border-2 border-gray-500 text-xs"
+              ></span>
+              <p>Výsledky už po 4 týždňoch</p>
+            </div>
+
+            <div class="check-item flex items-center gap-3 cursor-pointer">
+              <span
+                class="check-icon w-5 h-5 flex items-center justify-center rounded-lg border-2 border-gray-500 text-xs"
+              ></span>
+              <p>Dermatologicky testované a schválené</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Carasol -->
+    <div class="carousel rounded-box gap-3 m-10">
+      <div class="carousel-item">
+        <img src="Images/2.png.png" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/PRODUKT3.png.png" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/PRODUKT5.png (1).png" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/PRODUKT4.png (1).png" />
+      </div>
+    </div>
+
+     <!-- table1 -->
+    <section class="px-4 md:px-10 py-12 space-y-12">
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <!-- LEFT -->
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-3xl font-bold">
+            PREČO LEDLUX <br />
+            <span class="font-normal">OD LUMEN LUXE?</span>
+          </h2>
+
+          <div class="mt-6 space-y-4 text-sm text-gray-700">
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+              >
+                ✓
+              </span>
+              <p>
+                Našich <span class="font-bold">210 diód</span> zaručuje, že
+                liečivé svetlo pokryje 100% vašej tváre.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-sm leading-none"
+              >
+                ✓
+              </span>
+              <p>
+                <span class="font-bold">Výkon 20 mW/cm2</span> je vedecky
+                podložený výkon pre maximálne bezpečné a požadovaný efekt.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+              >
+                ✓
+              </span>
+              <p>
+                <span class="font-bold">Multifunkčnosť: 7 farieb</span> pre
+                každý problém.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+              >
+                ✓
+              </span>
+              <p>
+                <span class="font-bold">Inteligentný časovač:</span> nastavte
+                režim a nechajte technológiu pracovať za vás.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+              >
+                ✓
+              </span>
+              <p>
+                <span class="font-bold">Inteligentný záruka:</span> nechaj pre
+                citlivú pleť.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span
+                class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+              >
+                ✓
+              </span>
+              <p>
+                <span class="font-bold">Záruka:</span> 24 mesiacov + 30 dní
+                vrátenie bez otázok.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex-1">
+          <img
+            src="Images/stranka1 3.png"
+            class="w-full max-w-md mx-auto rounded-lg"
+          />
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <!-- LEFT -->
+        <div class="flex-1">
+          <img
+            src="Images/Group 183.png"
+            class="w-full h-full max-w-md mx-auto"
+          />
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex-1">
+          <h2 class="text-xl md:text-2xl font-bold mb-2">
+            TECHNICKÉ <span class="font-normal">PARAMETRE</span>
+          </h2>
+          <p class="text-xs text-gray-500 mb-5">
+            <span class="font-bold text-black">Typ LED diód:</span>
+            Modré, červené, zelené, fialové, žlté, azurové, biele
+          </p>
+          <div class="flex flex-row gap-3 items-stretch">
+            <!-- First box -->
+            <div
+              class="flex-1 bg-gray-100 p-4 rounded-lg text-sm flex flex-col"
+            >
+              <p class="space-y-2">
+                <span class="font-bold text-lg mt-3">Vlnové dĺžky</span><br />
+                • modré 460nm <br />
+                • červené 630nm <br />
+                • zelené 520nm <br />
+                • fialové 530+460 nm<br />
+                • žlté 630+520 nm <br />
+                • azurové 520+460 nm <br />
+                • biele 630+520+460 nm
+              </p>
+            </div>
+
+            <!-- Second box -->
+            <div
+              class="flex-1 bg-gray-100 rounded-lg text-sm flex flex-col px-4"
+            >
+              <span class="font-bold text-lg mt-3">Obsah balenia</span><br />
+              • LEDLUX maska <br />
+              • Nabíjateľný ovládač <br />
+              • USB C kábel <br />
+              • Nastaviteľné popruhy na hlavu <br />
+              • Integrované ochranné štíty na oči
+            </div>
+          </div>
+
+          <!-- Feature -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 text-white text-sm"
+          >
+            <div class="bg-blue-900 p-4 rounded-lg text-center">
+              <p class="font-bold text-start">Počet LED diód</p>
+              <p class="text-start">210 kvalitných <br />LED diód</p>
+            </div>
+
+            <div class="bg-blue-900 p-4 rounded-lg text-center">
+              <p class="font-bold text-start">Určené na použitie</p>
+              <p class="text-start text-xs">
+                Určené na použitie Tvár (univerzálny dizajn <br />
+                pre všetky typy pleti)
+              </p>
+            </div>
+
+            <div class="bg-blue-900 p-4 rounded-lg text-center">
+              <p class="font-bold text-start">Certifikácie</p>
+              <p class="text-start">CE, RoHS, FC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex flex-col lg:flex-row items-start mx-10 gap-10">
+      <!-- LEFT -->
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-3xl font-bold">
+          Prečo 20 mW/cm²<br />
+          <span class="font-normal">a 210LED diód?</span>
+        </h2>
+        <p class="text-xs text-gray-500 mt-2">
+          LED terapia nie je súťaž o “väčšom výkone” ale o vedecký správnej sile
+          a 100% bezpečnosti.
+        </p>
+
+        <div class="mt-6 space-y-4 text-sm text-gray-700">
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              Chladná terapia<span class="font-bold"></span>
+                žiadne pálenie ani prehriatie</span
+              >
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-sm leading-none"
+            >
+              ✓
+            </span>
+            <p>
+              <span class="font-bold">Výkon 20 mW/cm2</span> je vedecky
+              podložený výkon pre maximálne bezpečné a požadovaný efekt.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              <span class="font-bold">Dosahuje 12 J/cm² – presnú klinickú dávku</span>
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              <span class="font-bold">Stimuluje ATP produkciu bez rizika</span> nastavte
+              režim a nechajte technológiu pracovať za vás.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>Bezpečné pre všetky typy pleti – 
+              <span class="font-bold">0% riziko poškodenia pleti  </span> nechaj pre
+              citlivú pleť.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              <span class="font-bold">100% pokrytie tváre</span> žiadne “mŕtve zóny” – každé miesto
+              tváre dostane rovnakú dávku svetla
+            </p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              2x hustejšie umiestnenie oproti štandardným maskám –
+                maximálna uniformita
+            </p>
+          </div>
+           <div class="flex items-start gap-3">
+            <span
+              class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 text-xs"
+            >
+              ✓
+            </span>
+            <p>
+              <span class="font-bold">Presné a certifikované vlnové dĺžky v každej dióde</span>
+              Čítajte viac o vedecký podložených parametroch LED terapie v sekcii VEDECKÉ ŠTÚDIE.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex-1">
+        <img
+          src="Images/stranka2-ig-square-1080-1080_47ea0d24-0768-4818-86c0-b38150db2e0c.jpg.png"
+          class="w-full max-w-md mx-auto rounded-lg pt-8"
+        />
+      </div>
+    </div>
+
+  <section class="px-4 md:px-10 py-16 bg-gray-100">
+  <h2 class="text-center text-xl md:text-2xl font-bold mb-10">
+    OTÁZKY A <span class="font-normal">ODPOVEDE</span>
+  </h2>
+
+  <div class="px-10 mx-auto border divide-y">
+
+    <!-- ITEM -->
+    <div class="faq-item bg-black text-white">
+      <button class="faq-btn w-full flex justify-between items-center p-2 text-left">
+        <span>1 &nbsp; S akými problémami LED maska pomáha?</span>
+        <span class="icon">−</span>
+      </button>
+      <div class="faq-content px-5 pb-5 text-sm text-gray-300">
+       LumenLuxe is designed for wrinkles, pigmentation, acne, uneven skin tone, and overall rejuvenation. <br> 7 different light modes target specific concerns — you can mix and match based on your skin's needs.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn w-full flex justify-between items-center p-5 text-left">
+        <span class="font-bold">2 &nbsp;Čím sa LumenLuxe líši od lacných masiek?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-content hidden px-5 pb-5 text-sm text-gray-600 font-bold">
+       Je bezpečná pre citlivú pleť?
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn w-full flex justify-between items-center p-5 text-left">
+        <span class="font-bold">3 &nbsp; Je bezpečná pre citlivú pleť?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-content hidden px-5 pb-5 text-sm text-gray-600">
+        Áno, je bezpečná aj pre citlivú pleť.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn w-full flex justify-between items-center p-5 text-left">
+        <span class="font-bold">4 &nbsp; Čo ak neuvidím výsledky — aká je záruka?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-content hidden px-5 pb-5 text-sm text-gray-600">
+        30 dní vrátenie peňazí bez otázok.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn w-full flex justify-between items-center p-5 text-left">
+        <span class="font-bold">5 &nbsp; Kedy masku NEpoužívať?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-content hidden px-5 pb-5 text-sm text-gray-600">
+        Nepoužívajte pri otvorených ranách alebo citlivosti na svetlo.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+  <!-- PRODUCTS -->
+  <section class="px-4 md:px-10 py-10">
+  <!-- TITLE -->
+  <h2 class="text-xl md:text-2xl text-left mt-7 mb-10">
+    Mohlo by <span class="font-bold">vás zaujímať</span>
+  </h2>
+
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- CARD 1 -->
+    <div class="shadow-md">
+      <img
+        src="Images/GREENTEA NOBLESSE so zeleným čajom.png"
+        class="w-full rounded-lg"
+      />
+      <p class="mt-5 text-sm mx-5 font-semibold">
+        GREENTEA NOBLESSE so zeleným čajom
+      </p>
+      <p class="font-semibold text-sm mt-1 mx-5">€11,80 <span class="text-gray-400 text-xs">EUR</span></p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="shadow-md">
+      <img
+        src="Images/Q10 NOBLESSE s Q10.png"
+        class="w-full rounded-lg"
+      />
+      <p class="mt-5 text-sm mx-5 font-semibold">
+        Q10 NOBLESSE s Q10
+      </p>
+     <p class="font-semibold text-sm mt-4 mx-5">€11,80 <span class="text-gray-400 text-xs">EUR</span></p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="shadow-md">
+      <img
+        src="Images/SYN-AKE NOBLESSES účinok hadieho jedu.png"
+        class="w-full rounded-lg"
+      />
+      <p class="mt-5 text-sm mx-5 font-semibold">
+        GREENTEA NOBLESSE so zeleným čajom
+      </p>
+      <p class="font-semibold text-sm mt-1 mx-5">€11,80 <span class="text-gray-400 text-xs">EUR</span></p>
+      <!-- Reviews -->
+      <div class="flex items-center mt-2 mx-4">
+        <div class="flex gap-1 mx-1">
+          <img src="Images/Icon (6).png" class="w-2 h-2" />
+          <img src="Images/Icon (6).png" class="w-2 h-2" />
+          <img src="Images/Icon (6).png" class="w-2 h-2" />
+          <img src="Images/Icon (6).png" class="w-2 h-2" />
+          <img src="Images/Icon (6).png" class="w-2 h-2" />
+        </div>
+        <span class="text-xs text-gray-500">2 reviews</span>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="shadow-md">
+      <img
+        src="Images/RED GINSENG NOBLESSE s červeným ženšeňom.png"
+        class="w-full rounded-lg"
+      />
+      <p class="mt-5 text-sm mx-5 font-semibold">
+        GREENTEA NOBLESSE so zeleným čajom
+      </p>
+      <p class="font-semibold text-sm mt-1 mx-5">€11,80 <span class="text-gray-400 text-xs">EUR</span></p>
+    </div>
+
+    </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+      const mainImage = document.getElementById("mainImage");
+      const thumbs = document.querySelectorAll(".thumb");
+      const leftArrow = document.getElementById("leftArrow");
+      const rightArrow = document.getElementById("rightArrow");
+
+      let currentIndex = 0;
+      const images = Array.from(thumbs).map((img) => img.src);
+
+      function updateImage(index) {
+        currentIndex = index;
+        mainImage.src = images[currentIndex];
+
+        // Reset all thumbnails
+        thumbs.forEach((img) => {
+          img.classList.remove("border-2", "border-gray-400");
+        });
+
+        // Active thumbnail
+        thumbs[currentIndex].classList.add("border-2", "border-gray-400");
+      }
+
+      // Thumbnail click
+      thumbs.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          updateImage(index);
+        });
+      });
+
+      // FAQ ACCORDION
+document.querySelectorAll(".faq-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector(".icon");
+
+    const isOpen = !content.classList.contains("hidden");
+
+    // close all
+    document.querySelectorAll(".faq-content").forEach((el) => {
+      el.classList.add("hidden");
+    });
+    document.querySelectorAll(".icon").forEach((el) => {
+      el.textContent = "+";
+    });
+
+    // open current
+    if (!isOpen) {
+      content.classList.remove("hidden");
+      icon.textContent = "−";
+    }
+  });
+});
+
+      document.querySelectorAll(".check-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          const icon = item.querySelector(".check-icon");
+
+          // toggle checked style
+          icon.classList.toggle("bg-blue-500");
+          icon.classList.toggle("text-white");
+
+          // toggle checkmark
+          if (icon.textContent === "✓") {
+            icon.textContent = "";
+          } else {
+            icon.textContent = "✓";
+          }
+        });
+      });
+
+      const items = document.querySelectorAll(".check-item");
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          const icon = item.querySelector(".check-icon");
+
+          // Toggle active
+          if (icon.classList.contains("bg-green-500")) {
+            icon.classList.remove("bg-green-500", "text-white");
+            icon.innerHTML = "";
+          } else {
+            icon.classList.add("bg-green-500", "text-white");
+            icon.innerHTML = "✓";
+          }
+        });
+      });
+
+      // RIGHT arrow
+      rightArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage(currentIndex);
+
+        rightArrow.classList.add("bg-blue-500", "text-white");
+        leftArrow.classList.remove("bg-blue-500");
+      });
+      let quantity = 1;
+
+      const quantityEl = document.getElementById("quantity");
+      const increaseBtn = document.getElementById("increase");
+      const decreaseBtn = document.getElementById("decrease");
+
+      increaseBtn.addEventListener("click", () => {
+        quantity++;
+        quantityEl.textContent = quantity;
+      });
+
+      decreaseBtn.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          quantityEl.textContent = quantity;
+        }
+      });
+
+      // LEFT arrow
+      leftArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage(currentIndex);
+
+        leftArrow.classList.add("bg-blue-500", "text-white");
+        rightArrow.classList.remove("bg-blue-500");
+      });
+
+      // Initial state
+      const Images = Array.from(thumbs).map((img) => img.src);
+    </script>
+  </body>
+</html>
